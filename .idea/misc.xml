@@ -5,6 +5,8 @@
       <map>
         <entry key="app/src/main/res/drawable/action_btn.xml" value="0.15092592592592594" />
         <entry key="app/src/main/res/drawable/card_back.xml" value="0.19010416666666666" />
+        <entry key="app/src/main/res/drawable/purple_bg.xml" value="0.15092592592592594" />
+        <entry key="app/src/main/res/layout/activity_landing2.xml" value="0.18" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.22" />
       </map>
     </option>

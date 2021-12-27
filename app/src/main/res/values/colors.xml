@@ -8,5 +8,7 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="skin_care_cardBackground">#7F310435</color>
+    <color name="skin_care_purpleDark">#310435</color>
     <color name="skin_care_btnColor">#CA00DC</color>
+    <color name="skin_care_purpleLight">#130014</color>
 </resources>
