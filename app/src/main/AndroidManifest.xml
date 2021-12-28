@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SkinCare">
         <activity
+            android:name=".SkinActivity"
+            android:exported="true" />
+        <activity
             android:name=".ProductsActivity"
             android:exported="true" />
         <activity

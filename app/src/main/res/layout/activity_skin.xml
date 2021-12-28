@@ -4,9 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ProductsActivity"
+    tools:context=".SkinActivity"
     android:background="@color/white">
-
     <RelativeLayout
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
@@ -45,7 +44,7 @@
             android:textAllCaps="false"
             android:textColor="@color/skin_care_grey"
             android:background="@color/white"
-           />
+            />
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btn_skin_type"
             android:layout_width="match_parent"
@@ -53,58 +52,16 @@
             android:text="Skin Type"
             android:textAllCaps="false"
             android:layout_weight="1"
-            android:textColor="@color/skin_care_grey"
+            android:textColor="@color/skin_care_btnColor"
             android:background="@color/white"
             />
     </LinearLayout>
 
-    <EditText
-        android:id="@+id/complexion_input"
+    <FrameLayout
+        android:id="@+id/container_skin_type"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:layout_below="@id/top_nav"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="16dp"
-        android:background="@color/skin_care_back_learn"
-        android:elevation="4dp"
-        android:hint="Enter your skin complexion"
-        android:minHeight="48dp"
-        android:padding="16dp"
-        android:textColor="@color/black"
-        android:textColorHint="@color/skin_care_grey" />
+        android:layout_marginTop="16dp"/>
 
-    <EditText
-        android:id="@+id/skin_type_input"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/complexion_input"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="16dp"
-        android:background="@color/skin_care_back_learn"
-        android:elevation="4dp"
-        android:hint="Enter your skin type"
-        android:minHeight="48dp"
-        android:padding="16dp"
-        android:textColor="@color/black"
-        android:textColorHint="@color/skin_care_grey" />
-
-    <androidx.appcompat.widget.AppCompatButton
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="16dp"
-        android:background="@color/skin_care_btnColor"
-        android:elevation="8dp"
-        android:minHeight="48dp"
-        android:padding="8dp"
-        android:text="Find Beauty Products"
-        android:textAllCaps="false"
-        android:textColor="@color/white"
-        android:textSize="18dp" />
 </RelativeLayout>

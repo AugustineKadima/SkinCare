@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.SkinTypesFragment"
+    android:background="@color/white">
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="16dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+        <RelativeLayout
+            android:id="@+id/top_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@color/skin_care_back_learn"
+            android:elevation="8sp">
+
+            <ImageView
+                android:id="@+id/complexion_img"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/skintypesthree" />
+
+            <TextView
+                android:id="@+id/complexion_header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/complexion_img"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:text="Skin Types"
+                android:textColor="@color/black"
+                android:textSize="24dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/complexion_header"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="32dp"
+                android:text="There are three skin types. These include oily skin, dry skin and normal skin.
+
+Click on the specific skin type below to learn more."
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/normal_skin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/skin_care_back_learn"
+            android:layout_below="@id/top_card"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            android:padding="16dp"
+            android:minHeight="48dp"
+            android:elevation="8dp"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:text="Normal Skin"
+            android:gravity="center_vertical"
+            />
+
+        <TextView
+            android:id="@+id/oily_skin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/skin_care_back_learn"
+            android:layout_below="@id/normal_skin"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp"
+            android:padding="16dp"
+            android:minHeight="48dp"
+            android:elevation="8dp"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:text="Oily Skin"
+            android:gravity="center_vertical"
+            />
+
+        <TextView
+            android:id="@+id/dry_skin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/skin_care_back_learn"
+            android:layout_below="@id/oily_skin"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp"
+            android:padding="16dp"
+            android:minHeight="48dp"
+            android:elevation="8dp"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:text="Dry Skin"
+            android:gravity="center_vertical"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_go_to_beauty_products"
+            android:layout_below="@id/dry_skin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@color/skin_care_btnColor"
+            android:elevation="8dp"
+            android:minHeight="48dp"
+            android:padding="8dp"
+            android:text="Go to beauty products"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="18dp" />
+
+    </RelativeLayout>
+
+</ScrollView>
+
+
+</RelativeLayout>
