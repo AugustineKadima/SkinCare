@@ -40,16 +40,20 @@
             android:textSize="18sp" />
 
         <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_start_learn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/learn"
-            android:layout_margin="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
             android:background="@drawable/action_btn"
             android:elevation="8dp"
             android:minHeight="48dp"
             android:text="Start Here"
-            android:textSize="18dp"
-            android:textAllCaps="false" />
+            android:textAllCaps="false"
+            android:textSize="18dp" />
     </RelativeLayout>
 
     <RelativeLayout
@@ -77,6 +81,7 @@
             android:textSize="18sp" />
 
         <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_start_products"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/products"
@@ -88,8 +93,8 @@
             android:elevation="8dp"
             android:minHeight="48dp"
             android:text="Start Here"
-            android:textSize="18dp"
-            android:textAllCaps="false" />
+            android:textAllCaps="false"
+            android:textSize="18dp" />
     </RelativeLayout>
 
 </RelativeLayout>

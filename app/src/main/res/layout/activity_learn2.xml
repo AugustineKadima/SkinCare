@@ -1,9 +1,101 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LearnActivity2">
+    tools:context=".LearnActivity2"
+    android:background="@color/white">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/skin_care_btnColor"
+        android:gravity="center"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:gravity="center"
+            android:text="SkinCare"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/top_nav"
+        android:layout_below="@id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="8dp"
+        android:background="@color/white">
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Skin Complexion"
+            android:layout_weight="1"
+            android:textAllCaps="false"
+            android:textColor="@color/skin_care_btnColor"
+            android:background="@color/white"
+            />
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Skin Type"
+            android:textAllCaps="false"
+            android:layout_weight="1"
+            android:textColor="@color/skin_care_grey"
+            android:background="@color/white"
+            />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="8sp"
+        android:layout_below="@id/top_nav"
+        android:layout_margin="16dp"
+        android:background="@color/skin_care_back_learn">
+
+        <ImageView
+            android:id="@+id/complexion_img"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/complexion" />
+
+        <TextView
+            android:id="@+id/complexion_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Skin Complexion"
+            android:textSize="24dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_below="@id/complexion_img"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="16dp"/>
+        <TextView
+            android:layout_below="@id/complexion_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="32dp"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:text="This reffers to human skin color. It ranges from the darkest brown to the lightest hues. Differences in skin color among individuals is caused by variation in pigmentation, which is the result of genetics, the exposure to the sun, or both.
+
+
+This variation in skin complexion demands a variety of skin care products which are specific to a given skin type. On this website we will help you find products that match your skin complexion."/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

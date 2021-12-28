@@ -11,4 +11,6 @@
     <color name="skin_care_purpleDark">#310435</color>
     <color name="skin_care_btnColor">#CA00DC</color>
     <color name="skin_care_purpleLight">#130014</color>
+    <color name="skin_care_grey">#817D82</color>
+    <color name="skin_care_back_learn">#FCF3FD</color>
 </resources>
