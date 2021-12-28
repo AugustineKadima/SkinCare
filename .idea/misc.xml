@@ -12,6 +12,7 @@
         <entry key="app/src/main/res/layout/activity_products.xml" value="0.18" />
         <entry key="app/src/main/res/layout/activity_skin.xml" value="0.18" />
         <entry key="app/src/main/res/layout/fragment_normal_skin.xml" value="0.18" />
+        <entry key="app/src/main/res/layout/fragment_oily_skin.xml" value="0.1" />
         <entry key="app/src/main/res/layout/fragment_skin_types.xml" value="0.18" />
       </map>
     </option>
