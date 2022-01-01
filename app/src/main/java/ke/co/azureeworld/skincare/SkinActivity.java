@@ -1,33 +1,59 @@
 package ke.co.azureeworld.skincare;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.FragmentManager;
-import androidx.fragment.app.FragmentTransaction;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
-import ke.co.azureeworld.skincare.fragments.SkinTypesFragment;
+
 
 public class SkinActivity extends AppCompatActivity {
-    Button btn_skin_types, btn_skin_complexion;
+    Button btn_products, btn_skin_complexion;
+    TextView oily, dry, normal;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_skin);
         
         btn_skin_complexion = (Button) findViewById(R.id.btn_skin_complexion);
-        btn_skin_types = (Button) findViewById(R.id.btn_skin_type);
-        skinTypes();
-        
-        btn_skin_types.setOnClickListener(new View.OnClickListener() {
+        oily = (TextView) findViewById(R.id.oily_skin);
+        dry = (TextView) findViewById(R.id.dry_skin);
+        normal = (TextView) findViewById(R.id.normal_skin);
+        btn_products = (Button) findViewById(R.id.btn_go_to_beauty_products);
+
+        btn_products.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                skinTypes();
+                startActivity(new Intent(SkinActivity.this, ProductsActivity.class));
             }
         });
+
+        normal.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(SkinActivity.this, NormalSkinActivity2.class));
+            }
+        });
+
+        oily.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(SkinActivity.this, OilySkinActivity2.class));
+            }
+        });
+
+        dry.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(SkinActivity.this, DrySkinActivity2.class));
+            }
+        });
+
         
         btn_skin_complexion.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -41,15 +67,8 @@ public class SkinActivity extends AppCompatActivity {
         startActivity(new Intent(SkinActivity.this, LearnActivity2.class));
     }
 
-    private void skinTypes() {
-        btn_skin_types.setTextColor(getResources().getColor(R.color.skin_care_btnColor));
-        btn_skin_complexion.setTextColor(getResources().getColor(R.color.skin_care_grey));
-        FragmentManager fragmentManager = getSupportFragmentManager();
-        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-        SkinTypesFragment skinTypesFragment = new SkinTypesFragment();
-        fragmentTransaction.replace(R.id.container_skin_type, skinTypesFragment);
-        fragmentTransaction.addToBackStack(null);
-        fragmentTransaction.commit();
-
-    }
+//    private void skinTypes() {
+//
+//
+//    }
 }

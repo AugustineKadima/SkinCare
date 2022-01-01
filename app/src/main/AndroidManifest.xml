@@ -10,6 +10,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SkinCare">
         <activity
+            android:name=".NormalSkinActivity2"
+            android:exported="true" />
+        <activity
+            android:name=".OilySkinActivity2"
+            android:exported="true" />
+        <activity
+            android:name=".DrySkinActivity2"
+            android:exported="true" />
+        <activity
+            android:name=".SkinTypesActivity2"
+            android:exported="true" />
+        <activity
             android:name=".SkinActivity"
             android:exported="true" />
         <activity

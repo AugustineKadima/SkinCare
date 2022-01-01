@@ -6,11 +6,15 @@
         <entry key="app/src/main/res/drawable/action_btn.xml" value="0.15092592592592594" />
         <entry key="app/src/main/res/drawable/card_back.xml" value="0.19010416666666666" />
         <entry key="app/src/main/res/drawable/purple_bg.xml" value="0.15092592592592594" />
+        <entry key="app/src/main/res/layout/activity_dry_skin2.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_landing2.xml" value="0.18" />
         <entry key="app/src/main/res/layout/activity_learn2.xml" value="0.18" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="app/src/main/res/layout/activity_normal_skin2.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_oily_skin2.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_products.xml" value="0.18" />
         <entry key="app/src/main/res/layout/activity_skin.xml" value="0.18" />
+        <entry key="app/src/main/res/layout/activity_skin_types2.xml" value="0.1" />
         <entry key="app/src/main/res/layout/fragment_dry_skin.xml" value="0.1" />
         <entry key="app/src/main/res/layout/fragment_normal_skin.xml" value="0.18" />
         <entry key="app/src/main/res/layout/fragment_oily_skin.xml" value="0.18" />
