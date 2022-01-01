@@ -23,5 +23,12 @@ public class ProductsActivity extends AppCompatActivity {
                 startActivity(new Intent(ProductsActivity.this, LearnActivity2.class));
             }
         });
+
+        btn_skin_type.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(ProductsActivity.this, SkinActivity.class));
+            }
+        });
     }
 }

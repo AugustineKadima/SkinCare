@@ -24,7 +24,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_above="@id/btn_get_started"
-        android:layout_marginEnd="32dp"
+        android:layout_marginEnd="4dp"
         android:layout_marginBottom="24dp"
         android:background="@drawable/card_back">
 
@@ -47,20 +47,16 @@
         android:id="@+id/btn_get_started"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@color/white"
+        android:elevation="8dp"
+        android:minHeight="48dp"
         android:text="Get Started"
         android:textAllCaps="false"
-        android:minHeight="48dp"
-        android:background="@drawable/action_btn"
-        android:textColor="@color/white"
-        android:paddingStart="32dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginBottom="16dp"
-        android:layout_marginEnd="56dp"
-        android:paddingEnd="32dp"
-        android:textSize="16dp"
-        android:layout_alignParentBottom="true"
-        android:elevation="8dp"
-        />
+        android:textColor="@color/skin_care_btnColor"
+        android:textSize="16dp" />
 
 
 </RelativeLayout>
