@@ -48,24 +48,23 @@ public class Product {
         return Objects.hash(skinComplexion, skinType);
     }
 
-    public String getBeautyProducts(String skinComplexion, String skinType){
-        if((skinComplexion.length() == 0 || skinType.length() == 0) || (skinComplexion.length() == 0 && skinType.length() == 0)) return "Please select your skin type and skin complexion to get beauty products that match your skin.";
-        if(skinComplexion.equals("dark")){
+    public static String getBeautyProducts(String skinComplexion, String skinType){
+        if(skinComplexion == "dark"){
             if(skinType == "oily"){
-                return "We suggest the following beauty products for dark skin complexion and oily skin type\n" +
+                return "We suggest the following beauty products for dark skin complexion and oily skin type\n" + "---------------\n"+
                         "\n" +
                         "Soothing Serum\n" +
                         "Iunik\n" +
                         "Panoxyl\n" +
                         "Coconut water cream\n" +
                         "\n" +
-                        "We suggest the following locations\n" +
+                        "We suggest the following locations\n" + "---------------\n"+
                         "\n" +
                         "Beauty Click, Parklands, Nairobi\n" +
                         "Reones Beauty and Cosmetics Supply, Eastleigh, Nairobi\n" +
                         "Skincare, Kileleshwa, Nairobi";
             }else if(skinType == "dry"){
-                return "We suggest the following beauty products for dark skin complexion and dry skin type\n" +
+                return "We suggest the following beauty products for dark skin complexion and dry skin type\n" + "---------------\n"+
                         "\n" +
                         "Pure aloe vera gel\n" +
                         "Coconut oil\n" +
@@ -73,13 +72,13 @@ public class Product {
                         "Eucerin\n" +
                         "Borage\n" +
                         "\n" +
-                        "We suggest the following locations\n" +
+                        "We suggest the following locations\n" + "---------------\n"+
                         "\n" +
                         "Beauty Blog Kenya, CBD\n" +
                         "Radiant Beauty World, Nairobi\n" +
                         "Suzie Beauty, Nairobi CBD";
             }else if(skinType == "normal"){
-                return "We suggest the following beauty products for dark skin complexion and normal skin type\n" +
+                return "We suggest the following beauty products for dark skin complexion and normal skin type\n" + "---------------\n"+
                         "\n" +
                         "Cetaphil\n" +
                         "Olay\n" +
@@ -87,16 +86,16 @@ public class Product {
                         "Purity Cleanser\n" +
                         "Baby Brown Clarins\n" +
                         "\n" +
-                        "We suggest the following locations\n" +
+                        "We suggest the following locations\n" + "---------------\n"+
                         "\n" +
                         "Le-fremms Beauty Salon, CBD\n" +
                         "Lintons Beauty\n" +
                         "Beautine Enterprises\n" +
                         "Brivys Beauty Products and Accessories";
             }
-        }else if(skinComplexion.equals("light")){
+        }else if(skinComplexion == "light"){
             if(skinType == "oily"){
-                return "We suggest the following beauty products for light skin complexion and oily skin type\n" +
+                return "We suggest the following beauty products for light skin complexion and oily skin type\n" + "---------------\n"+
                         "\n" +
                         "Covergirl Clean Fresh Pressed Powder\n" +
                         "Kate Somerville Oil-Free Moisturizer\n" +
@@ -104,12 +103,12 @@ public class Product {
                         "Dermalogica Oil Free Matte SPF30\n" +
                         "Mary Kay Oil Mattifier\n" +
                         "\n" +
-                        "We suggest the following locations\n" +
+                        "We suggest the following locations\n" + "---------------\n"+
                         "\n" +
                         "Skincare, Nairobi CBD\n" +
                         "Super Cosmetics, Adams Arcade, Nairobi";
             }else if(skinType == "dry"){
-                return "We suggest the following beauty products for light skin complexion and dry skin type\n" +
+                return "We suggest the following beauty products for light skin complexion and dry skin type\n" + "---------------\n"+
                         "\n" +
                         "beautyProductsLightOily\n" +
                         "Aquaphor Healing Ointment\n" +
@@ -118,23 +117,23 @@ public class Product {
                         "CeraVe Facial Moisturizing Lotion PM\n" +
                         "CeraVe SA Cream\n" +
                         "\n" +
-                        "We suggest the following locations\n" +
+                        "We suggest the following locations\n" + "---------------\n"+
                         "\n" +
                         "Peepy Beauty Products, Nairobi City\n" +
                         "Reones Beauty and Cosmetics Supply, Starehe";
             }else if(skinType == "normal"){
-                return "We suggest the following beauty products for light skin complexion and normal skin type\n" +
+                return "We suggest the following beauty products for light skin complexion and normal skin type\n" + "---------------\n"+
                         "\n" +
                         "Stone Crop Gel Wash\n" +
                         "Lemon Cleanser\n" +
                         "Stone Crop Cleansing Oil\n" +
                         "\n" +
-                        "We suggest the following locations\n" +
+                        "We suggest the following locations\n" + "---------------\n"+
                         "\n" +
                         "True Cosmetics, Mombasa\n" +
                         "Markay Products, Nairobi";
             }
         }
-        return "An error occurred. Please try again.";
+        return "Please select skin type and skin complexion. Select back to continue.";
     }
 }

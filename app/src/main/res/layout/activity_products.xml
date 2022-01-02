@@ -58,7 +58,7 @@
             />
     </LinearLayout>
 
-    <EditText
+    <Spinner
         android:id="@+id/complexion_input"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -67,7 +67,7 @@
         android:layout_marginTop="32dp"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"
-        android:background="@color/skin_care_back_learn"
+        android:background="@color/skin_care_grey"
         android:elevation="4dp"
         android:hint="Enter your skin complexion"
         android:minHeight="48dp"
@@ -75,7 +75,7 @@
         android:textColor="@color/black"
         android:textColorHint="@color/skin_care_grey" />
 
-    <EditText
+    <Spinner
         android:id="@+id/skin_type_input"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -83,15 +83,15 @@
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"
-        android:background="@color/skin_care_back_learn"
+        android:background="@color/skin_care_grey"
         android:elevation="4dp"
-        android:hint="Enter your skin type"
         android:minHeight="48dp"
         android:padding="16dp"
         android:textColor="@color/black"
-        android:textColorHint="@color/skin_care_grey" />
+        android:textColorHint="@color/black" />
 
     <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_find_beauty_products"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
