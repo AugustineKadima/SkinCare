@@ -21,9 +21,7 @@
         <activity
             android:name=".DrySkinActivity2"
             android:exported="true" />
-        <activity
-            android:name=".SkinTypesActivity2"
-            android:exported="true" />
+
         <activity
             android:name=".SkinActivity"
             android:exported="true" />
